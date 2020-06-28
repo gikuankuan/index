@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kuan_kuan</title>
 <style>
-    body{
-       color: black;
-        background-color: rgb(255, 179, 86);
+body{
+       color: rgb(2, 25, 51);
+        background-color: rgb(209, 184, 153);
     }
 .a{
     width: 320px;
@@ -15,24 +15,35 @@
     background-color: wheat;
     border-radius: 15px;
     margin: 60px auto ;
+    text-align: center;
+    
  
 }
 .a:hover{
     background-color: cadetblue;
 }
+.h3_1{
+  line-height: 100px;
+}
 
 </style>
 
 </head>
+
 <body>
     
-        <a href="calendar.php"><div class="a">萬年曆</div></a>
-  
-    <a href="invoice.php">發票</a>
-    <a href="color/index.html">顏色選擇</a>
-    
+        <div class="a" onclick="load('./clendar/calendar.php')"><h3 class="h3_1">萬年曆</h3></div>
+        <div class="a" onclick="load('./invoice/invoice.php')"><h3 class="h3_1">發票</h3></div>
+        <div class="a" onclick="load('./color/index.html')"><h3 class="h3_1">顏色選擇</h3></div>
 
 
+
+
+<script>
+    function load(a){
+        location.href=a;
+    }
+</script>
 
 </body>
 </html>
