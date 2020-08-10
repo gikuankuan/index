@@ -7,7 +7,7 @@
 <style>
 body{
        color: rgb(2, 25, 51);
-        background-color: rgb(209, 184, 153);
+       background: linear-gradient(135deg, rgb(253, 252, 251) 0%, rgb(226, 209, 195) 100%);
     }
 .a{
     width: 280px;
@@ -22,10 +22,17 @@ body{
 }
 .a:hover{
     background-color: cadetblue;
+    transition: ease 1s;
+    color: azure;
+    
 }
 .h3_1{
-  line-height: 80px;
+  line-height: 40px;
 
+}
+a{
+    direction: none;
+    text-decoration: none;
 }
 
 </style>
@@ -44,6 +51,10 @@ body{
         <div class="a" onclick="load('./clock1/index.html')"><h3 class="h3_1">數位時鐘</h3></div>
         <div class="a" onclick="load('#')"><h3 class="h3_1">類比時鐘</h3></div>
         <div class="a" onclick="load('./resume')"><h3 class="h3_1">履歷表</h3></div>
+        <div class="a" onclick="load('./opendeta')"><h3 class="h3_1">API串接</h3></div>
+        <a href="https://codepen.io/oipvtecy/pen/Exjqogp" class="a" target="_blank"><div  ><h3 class="h3_1">table練習</h3></div></a>
+       <a href="https://codepen.io/oipvtecy/pen/MWabbYq" class="a" target="_blank"><div ><h3 class="h3_1">animate練習</h3></div></a>
+
         
     </div>
 
